@@ -66,18 +66,28 @@ body {
    margin-top: 30px;
 }
 
+
+
 .quick-actions {
    display: flex;
    flex-direction: row;
    justify-content: space-around;
    margin-top: 20px;
    width: 100%;
+   scale: 100%;
+   transition:  linear 500s;
 }
 
 .quick-action {
    border-radius: 10px;
    background-color: #7d272c;
    padding: 10px;
+}
+
+.quick-action:hover {
+   
+   transform: scale(110%);
+   
 }
 
 .quick-action a {
