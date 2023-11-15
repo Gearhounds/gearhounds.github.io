@@ -66,6 +66,10 @@ body {
    margin-top: 30px;
 }
 
+.banner:hover{
+   transform: scale(1.5);
+}
+
 .quick-actions {
    display: flex;
    flex-direction: row;
