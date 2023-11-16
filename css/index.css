@@ -7,7 +7,7 @@ body {
 }
 
 .navbar {
-   background-color: #7d272c;
+   background-color: darkred; /*#7d272c*/
    position: sticky;
    top: 0;
    width: 100%;
@@ -75,13 +75,14 @@ body {
    margin-top: 20px;
    width: 100%;
    scale: 100%;
-   transition:  linear 500s;
+   
 }
 
 .quick-action {
    border-radius: 10px;
-   background-color: #7d272c;
+   background-color: darkred;
    padding: 10px;
+   transition: transform linear 50ms;
 }
 
 .quick-action:hover {
