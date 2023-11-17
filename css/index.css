@@ -29,6 +29,13 @@ body {
    color: white;
    text-decoration: none;
    padding: 15px;
+   transition: color linear 250ms;
+   transition: background-color linear 250ms;
+}  
+
+.navbar ul li a:hover {
+   color: antiquewhite;
+   background-color: #7d272c;
 }
 
 .navbar ul li:not(:first-child) {
