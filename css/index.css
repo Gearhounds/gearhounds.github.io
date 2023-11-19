@@ -1,60 +1,3 @@
-body {
-   background-color: gray;
-   font-family: "Lucida Console", "Courier New", monospace;
-   margin: 0;
-   background-image: url('path_to_your_image.jpg');
-   background-repeat: repeat;
-}
-
-.navbar {
-   background-color: darkred; /*#7d272c*/
-   position: sticky;
-   top: 0;
-   width: 100%;
-   height: 50px;
-}
-.navbar ul {
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   display: flex;
-   justify-content: space-between;
-   height: inherit;
-   align-items: center;
-}
-.navbar ul li {
-   display: inline;
-}
-.navbar ul li a {
-   color: white;
-   text-decoration: none;
-   padding: 15px;
-   transition: color linear 250ms;
-   transition: background-color linear 250ms;
-}  
-
-.navbar ul li a:hover {
-   color: antiquewhite;
-   background-color: #7d272c;
-}
-
-.navbar ul li:not(:first-child) {
-   margin-left: auto;
-}
-
-.navbar ul .dropdown {
-   display: none;
-   position: absolute;
- }
-
- .navbar ul li:hover .dropdown {
-   display: flex;
-   flex-direction: column;
-   text-align: left;
-   background-color: #7d272c;
-   height: 20px;
- }
-
 .banner {
    height: auto;
    display: flex;
@@ -73,16 +16,14 @@ body {
    margin-top: 30px;
 }
 
-
-
 .quick-actions {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
    margin-top: 20px;
    width: 100%;
    scale: 100%;
-   
+   display: grid;
+   grid-template-columns: auto auto auto;
+   justify-content: center;
+   align-items: center;
 }
 
 .quick-action {
@@ -90,12 +31,13 @@ body {
    background-color: darkred;
    padding: 10px;
    transition: transform linear 50ms;
+   width: 420px;
+   text-align: center;
+   margin: 0px 15px 0px 15px;
 }
 
 .quick-action:hover {
-   
    transform: scale(110%);
-   
 }
 
 .quick-action a {

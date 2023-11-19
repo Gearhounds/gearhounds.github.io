@@ -2,11 +2,55 @@
 <html>
   <head>
     <title>Join the Team</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/join_team.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <script src="../js/join_team.js"></script>
   </head>
   <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../index.html">Eaton Rapids Robotics</a></li>
+        <div>
+           <li><a href="upcoming_events.html">News</a></li>
+           <li><a href="about_us.html">About</a></li>
+           <li><a href="sponsors.html">Sponsors</a></li>
+           <li><a href="contact.html">Contact</a></li>
+        </div>
+      </ul>
+    </nav>
 
-    <h1>Join the team</h1>
-    <p>This is a paragraph.</p>
+      <form class="join-team-form">
+        <div class="form-item">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+        <div class="form-item"> 
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+        
+        <div class="form-item">
+          <label for="grade">Grade</label>
+          <select id="grade" name="grade">
+            <option value="...">...</option>
+            <option value="8th">8th</option>
+            <option value="9th">9th</option>
+            <option value="10th">10th</option>
+            <option value="11th">11th</option>
+            <option value="12th">12th</option>
+          </select>
+        </div>
+  
+        <div class="form-item">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+  
 
+        <input class="form-item" type="submit" value="Submit">
+                
+      </form>
   </body>
+
 </html>
