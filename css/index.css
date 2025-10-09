@@ -15,7 +15,7 @@
    font-size: 36px;
    font-weight: bold;
    margin-top: 45px;
-   margin-bottom: 30px;
+   margin-bottom: 20px;
    text-align: center;
    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
    background-color: rgba(0, 0, 0, 0.5);
@@ -26,7 +26,6 @@
 }
 
 .quick-actions-container {
-   margin-top: 10px;
    width: 100%;
    scale: 100%;
    display: grid;
@@ -130,22 +129,11 @@
    flex: 0 0 auto;
 }
 
-.first-logo-placeholder {
-   width: 150px;
-   height: 80px;
-   background-color: #555;
-   border: 2px dashed #777;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 8px;
-}
-
-.first-logo-placeholder p {
-   color: #ccc;
-   font-style: italic;
-   text-align: center;
-   font-size: 14px;
+.first-logo {
+   height: 60px;
+   width: auto;
+   max-width: 200px;
+   object-fit: contain;
 }
 
 .social-links {
