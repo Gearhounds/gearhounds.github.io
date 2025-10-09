@@ -136,6 +136,43 @@
    object-fit: contain;
 }
 
+.footer-contact {
+   flex: 1;
+   text-align: center;
+   color: #ccc;
+}
+
+.contact-item {
+   margin-bottom: 15px;
+}
+
+.contact-item:last-child {
+   margin-bottom: 0;
+}
+
+.contact-email {
+   margin: 0;
+   font-size: 14px;
+   line-height: 1.4;
+}
+
+.contact-email a {
+   color: #4CAF50;
+   text-decoration: none;
+   transition: color 0.3s ease;
+}
+
+.contact-email a:hover {
+   color: #66BB6A;
+   text-decoration: underline;
+}
+
+.contact-address {
+   margin: 0;
+   font-size: 14px;
+   line-height: 1.4;
+}
+
 .social-links {
    display: flex;
    gap: 20px;
