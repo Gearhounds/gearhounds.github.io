@@ -10,15 +10,15 @@
    margin-top: 30px;
 }
 
-.banner h1 {
+.slogan {
    color: white;
    font-size: 36px;
    font-weight: bold;
-   margin-top: 30px;
+   margin-top: 45px;
    margin-bottom: 30px;
    text-align: center;
    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-   background-color: rgba(0, 0, 0, 0.3);
+   background-color: rgba(0, 0, 0, 0.5);
    padding: 15px 30px;
    border-radius: 10px;
    max-width: 600px;
@@ -26,10 +26,11 @@
 }
 
 .quick-actions-container {
-   margin-top: 20px;
+   margin-top: 10px;
    width: 100%;
    scale: 100%;
    display: grid;
+   background: transparent;
    padding: 10px 0px;
    grid-template-columns: auto auto auto;
    justify-content: center;
@@ -107,6 +108,115 @@
    margin-bottom: 15px;
 }
 
+/* Footer Styles */
+.footer {
+   background-color: #333;
+   color: white;
+   padding: 40px 20px 20px;
+   margin-top: 40px;
+}
+
+.footer-content {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 30px;
+}
+
+.footer-logo {
+   flex: 0 0 auto;
+}
+
+.first-logo-placeholder {
+   width: 150px;
+   height: 80px;
+   background-color: #555;
+   border: 2px dashed #777;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+}
+
+.first-logo-placeholder p {
+   color: #ccc;
+   font-style: italic;
+   text-align: center;
+   font-size: 14px;
+}
+
+.social-links {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+
+.social-link {
+   text-decoration: none;
+   transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+   transform: scale(1.1);
+}
+
+.social-icon {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+   font-weight: bold;
+   transition: background-color 0.3s ease;
+}
+
+.youtube .social-icon {
+   background-color: #FF0000;
+   color: white;
+}
+
+.youtube:hover .social-icon {
+   background-color: #cc0000;
+}
+
+.instagram .social-icon {
+   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+   color: white;
+}
+
+.instagram:hover .social-icon {
+   opacity: 0.8;
+}
+
+.facebook .social-icon {
+   background-color: #1877F2;
+   color: white;
+   font-family: Arial, sans-serif;
+}
+
+.facebook:hover .social-icon {
+   background-color: #166fe5;
+}
+
+.footer-bottom {
+   max-width: 1200px;
+   margin: 30px auto 0;
+   padding-top: 20px;
+   border-top: 1px solid #555;
+   text-align: center;
+}
+
+.footer-bottom p {
+   margin: 0;
+   color: #ccc;
+   font-size: 14px;
+}
+
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
    .about-content {
@@ -116,5 +226,14 @@
    
    .about-image {
       flex: none;
+   }
+   
+   .footer-content {
+      flex-direction: column;
+      text-align: center;
+   }
+   
+   .social-links {
+      justify-content: center;
    }
 }
