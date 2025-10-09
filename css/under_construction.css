@@ -1,0 +1,154 @@
+/* Under Construction Page Styles */
+.construction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 50px);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.construction-content {
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 60px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+.construction-icon {
+    font-size: 80px;
+    color: #8B0000;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.construction-title {
+    color: #1a1a1a;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.construction-subtitle {
+    color: #2c2c2c;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #8B0000;
+}
+
+.construction-message {
+    color: #444;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.construction-features {
+    background-color: #f8f8f8;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.construction-features h3 {
+    color: #1a1a1a;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.construction-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.construction-features li {
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.construction-features li:before {
+    content: "⚙️";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #8B0000;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background-color: #A50000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 2px solid #eee;
+}
+
+.contact-info p {
+    color: #666;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.contact-info a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    color: #66BB6A;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .construction-content {
+        padding: 40px 25px;
+        margin: 10px;
+    }
+    
+    .construction-title {
+        font-size: 28px;
+    }
+    
+    .construction-subtitle {
+        font-size: 20px;
+    }
+    
+    .construction-icon {
+        font-size: 60px;
+    }
+    
+    .construction-message {
+        font-size: 16px;
+    }
+}
