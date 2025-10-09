@@ -11,18 +11,20 @@
 }
 
 .slogan {
-   color: white;
-   font-size: 36px;
-   font-weight: bold;
+   color: #ffffff;
+   font-size: 38px;
+   font-weight: 700;
    margin-top: 45px;
    margin-bottom: 20px;
    text-align: center;
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-   background-color: rgba(0, 0, 0, 0.5);
-   padding: 15px 30px;
-   border-radius: 10px;
-   max-width: 600px;
-   line-height: 1.2;
+   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+   background-color: rgba(0, 0, 0, 0.65);
+   padding: 20px 35px;  
+   border-radius: 12px;
+   max-width: 650px;
+   line-height: 1.3;
+   letter-spacing: 0.5px;
+   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .quick-actions-container {
@@ -38,25 +40,36 @@
 
 .quick-action {
    border-radius: 10px;
-   background-color: darkred;
-   padding: 10px;
-   transition: transform linear 50ms;
+   background-color: #8B0000;
+   padding: 15px 10px;
+   transition: all 0.2s ease;
    width: 420px;
    text-align: center;
    margin: 0px 15px 0px 15px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .quick-action:hover {
    transform: scale(110%);
+   background-color: #A50000;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .quick-action a {
-   color: white;
+   color: #ffffff;
    text-decoration: none;
+   font-weight: 600;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.quick-action h2 {
+   margin: 0;
+   font-size: 20px;
+   letter-spacing: 0.5px;
 }
 
 .about-section {
-   background-color: white;
+   background-color: rgb(123, 123, 123);
    padding: 60px 20px;
    margin-top: 20px;
 }
@@ -76,8 +89,8 @@
 .image-placeholder {
    width: 300px;
    height: 200px;
-   background-color: #f0f0f0;
-   border: 2px dashed #ccc;
+   background-color: #f8f8f8;
+   border: 2px dashed #999;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -85,9 +98,11 @@
 }
 
 .image-placeholder p {
-   color: #666;
+   color: #444;
    font-style: italic;
+   font-weight: 500;
    text-align: center;
+   font-size: 16px;
 }
 
 .about-text {
@@ -95,16 +110,19 @@
 }
 
 .about-text h2 {
-   color: #333;
-   font-size: 28px;
+   color: #1a1a1a;
+   font-size: 32px;
+   font-weight: bold;
    margin-bottom: 20px;
+   letter-spacing: -0.5px;
 }
 
 .about-text p {
-   color: #555;
-   font-size: 16px;
-   line-height: 1.6;
-   margin-bottom: 15px;
+   color: #2c2c2c;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 1.7;
+   margin-bottom: 18px;
 }
 
 /* Footer Styles */
@@ -139,11 +157,11 @@
 .footer-contact {
    flex: 1;
    text-align: center;
-   color: #ccc;
+   color: #e8e8e8;
 }
 
 .contact-item {
-   margin-bottom: 15px;
+   margin-bottom: 18px;
 }
 
 .contact-item:last-child {
@@ -152,25 +170,38 @@
 
 .contact-email {
    margin: 0;
-   font-size: 14px;
-   line-height: 1.4;
+   font-size: 15px;
+   font-weight: 500;
+   line-height: 1.5;
+}
+
+.contact-email strong {
+   color: #ffffff;
+   font-weight: 600;
 }
 
 .contact-email a {
-   color: #4CAF50;
+   color: #5FCF65;
    text-decoration: none;
+   font-weight: 500;
    transition: color 0.3s ease;
 }
 
 .contact-email a:hover {
-   color: #66BB6A;
+   color: #7DD87F;
    text-decoration: underline;
 }
 
 .contact-address {
    margin: 0;
-   font-size: 14px;
-   line-height: 1.4;
+   font-size: 15px;
+   font-weight: 500;
+   line-height: 1.5;
+}
+
+.contact-address strong {
+   color: #ffffff;
+   font-weight: 600;
 }
 
 .social-links {
@@ -232,14 +263,15 @@
    max-width: 1200px;
    margin: 30px auto 0;
    padding-top: 20px;
-   border-top: 1px solid #555;
+   border-top: 1px solid #666;
    text-align: center;
 }
 
 .footer-bottom p {
    margin: 0;
-   color: #ccc;
-   font-size: 14px;
+   color: #d4d4d4;
+   font-size: 15px;
+   font-weight: 500;
 }
 
 /* Responsive design for smaller screens */
